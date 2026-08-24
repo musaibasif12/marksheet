@@ -1,0 +1,15 @@
+#cont-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cont-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+}
+input{
+    display: block;
+}
