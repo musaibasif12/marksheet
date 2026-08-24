@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main-conatiner">
+      <form onsubmit="myFun(event)">
+        <label>English<input type="number" required id="engNum" /></label>
+        <label>Math<input type="number" required id="mathNum" /></label>
+        <label>Urdu<input type="number" required id="urduNum" /></label>
+        <label>Computer<input type="number" required id="compNum" /></label>
+        <label>Islamiat<input type="number" required id="islNum" /></label>
+        <label>Physics<input type="number" required id="phyNum" /></label>
+
+        <button>Generate Marksheet</button>
+      </form>
+      <table style="border: 1px solid red;">
+        <tr>
+          <th>Subjects</th>
+          <th>Total Marks</th>
+          <th>Obtained Marks</th>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>100</td>
+          <td id="engMarks" class = "empty"></td>
+        </tr>
+        <tr>
+          <td>Maths</td>
+          <td>100</td>
+          <td id="mathMarks" class = "empty"></td>
+        </tr>
+        <tr>
+          <td>Urdu</td>
+          <td>100</td>
+          <td id="urduMarks" class = "empty"></td>
+        </tr>
+        <tr>
+          <td>Computer</td>
+          <td>100</td>
+          <td id="compMarks" class = "empty"></td>
+        </tr>
+        <tr>
+          <td>Islamiat</td>
+          <td>100</td>
+          <td id="islMarks" class = "empty"></td>
+        </tr>
+        <tr>
+          <td>Physics</td>
+          <td>100</td>
+          <td id="phyMarks" class = "empty"></td>
+        </tr>
+        <tr>
+            <th>Percentage</th>
+          <th id="percentage" rowspan="2"></th>
+        </tr>
+      </table>
+      <p id="output"></p>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
