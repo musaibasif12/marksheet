@@ -7,62 +7,80 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="main-conatiner">
-      <div id="cont-1"><form onsubmit="myFun(event)">
-        <label>English<input type="number" required id="engNum" /></label>
-        <label>Math<input type="number" required id="mathNum" /></label>
-        <label>Urdu<input type="number" required id="urduNum" /></label>
-        <label>Computer<input type="number" required id="compNum" /></label>
-        <label>Islamiat<input type="number" required id="islNum" /></label>
-        <label>Physics<input type="number" required id="phyNum" /></label>
+    <div id="main-container">
+      <div id="h1"><h1>Enter Marks</h1></div>
+      <div id="cont-1">
+        <form onsubmit="myFun(event)">
+          <div id="inside-count-1">
+            <div id="cont-left">
+              <label>English<input type="number" required id="engNum" /></label
+              ><br />
+              <label>Math<input type="number" required id="mathNum" /></label
+              ><br />
+              <label>Urdu<input type="number" required id="urduNum" /></label
+              ><br />
+            </div>
+            <div id="cont-right">
+              <label
+                >Computer<input type="number" required id="compNum" /></label
+              ><br />
+              <label>Islamiat<input type="number" required id="islNum" /></label
+              ><br />
+              <label>Physics<input type="number" required id="phyNum" /></label
+              ><br />
+            </div>
+          </div>
 
-        <button>Generate Marksheet</button>
-      </form>
+          <div class="button-wrapper">
+            <button>Generate Marksheet</button>
+          </div>
+        </form>
       </div>
-      <div id="cont-2"><h1>Marksheet</h1>
-      <table style="border: 1px solid red;">
-        <tr>
-          <th>Subjects</th>
-          <th>Total Marks</th>
-          <th>Obtained Marks</th>
-        </tr>
-        <tr>
-          <td>English</td>
-          <td>100</td>
-          <td id="engMarks" class = "empty"></td>
-        </tr>
-        <tr>
-          <td>Maths</td>
-          <td>100</td>
-          <td id="mathMarks" class = "empty"></td>
-        </tr>
-        <tr>
-          <td>Urdu</td>
-          <td>100</td>
-          <td id="urduMarks" class = "empty"></td>
-        </tr>
-        <tr>
-          <td>Computer</td>
-          <td>100</td>
-          <td id="compMarks" class = "empty"></td>
-        </tr>
-        <tr>
-          <td>Islamiat</td>
-          <td>100</td>
-          <td id="islMarks" class = "empty"></td>
-        </tr>
-        <tr>
-          <td>Physics</td>
-          <td>100</td>
-          <td id="phyMarks" class = "empty"></td>
-        </tr>
-        <tr>
+      <div id="cont-2">
+        <h1>Marksheet</h1>
+        <table>
+          <tr>
+            <th>Subjects</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>100</td>
+            <td id="engMarks" class="empty"></td>
+          </tr>
+          <tr>
+            <td>Maths</td>
+            <td>100</td>
+            <td id="mathMarks" class="empty"></td>
+          </tr>
+          <tr>
+            <td>Urdu</td>
+            <td>100</td>
+            <td id="urduMarks" class="empty"></td>
+          </tr>
+          <tr>
+            <td>Computer</td>
+            <td>100</td>
+            <td id="compMarks" class="empty"></td>
+          </tr>
+          <tr>
+            <td>Islamiat</td>
+            <td>100</td>
+            <td id="islMarks" class="empty"></td>
+          </tr>
+          <tr>
+            <td>Physics</td>
+            <td>100</td>
+            <td id="phyMarks" class="empty"></td>
+          </tr>
+          <tr>
             <th>Percentage</th>
-          <th id="percentage" rowspan="2"></th>
-        </tr>
-      </table>
-      <p id="output"></p>
-    </div>
+            <th id="percentage" colspan="2"></th>
+          </tr>
+        </table>
+        <p id="output"></p>
+      </div>
     </div>
 
     <script src="./app.js"></script>

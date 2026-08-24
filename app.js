@@ -22,5 +22,5 @@ function myFun(event) {
     Number(compNum.value) +
     Number(islNum.value) +
     Number(phyNum.value);
-  percentage.innerHTML = Math.round((sumOfObtainedMarks / sumOfTotalMarks) * 100);
+  percentage.innerHTML = Math.round((sumOfObtainedMarks / sumOfTotalMarks) * 100) + "%";
 }

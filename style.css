@@ -1,15 +1,63 @@
-#cont-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Google Sans", sans-serif;
+  background-color: rgb(238, 250, 255);
 }
-#cont-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
+#main-container {
+  background-color: rgb(211, 243, 255);
+  border: 1px solid black;
+  padding: 0px 50px;
+  height: 100vh;
+  border-radius: 24px;
+box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);}
+#h1 {
+  text-align: center;
 }
-input{
-    display: block;
+#cont-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#inside-count-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+}
+#cont-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+}
+table {
+  margin: auto;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+tr,
+td,
+th {
+  border: 2px solid black;
+  padding: 8px;
+}
+input {
+  width: 60px;
+  display: block;
+}
+.button-wrapper {
+  text-align: center;
+  width: 100%;
+}
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px 16px;
 }
